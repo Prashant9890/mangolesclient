@@ -70,55 +70,73 @@ class CompanyComponent extends React.Component {
                 </div>
                 <div className="body">
                   <form onSubmit={this.formSubmit}>
-                    <label htmlFor="email_address">Name</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
+
+
+                  <div className="row">
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Company Name</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                          <input
                           type="text"
                           id="name"
                           name="name"
                           className="form-control"
                           placeholder="Enter Company Name"
-                        />
+                          />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <label htmlFor="email_address">License No.</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="license_no"
-                          name="license_no"
-                          className="form-control"
-                          placeholder="Enter License No."
-                        />
+
+                      <div className="col-lg-4">
+                        <label htmlFor="email_address">License No : </label>
+                        <div className="form-group">
+                          <div className="form-line">
+                          <input
+                            type="text"
+                            id="license_no"
+                            name="license_no"
+                            className="form-control"
+                            placeholder="Enter License No."
+                            />
+                          </div>
+                        </div>
                       </div>
+
+                      <div className="col-lg-4">
+                        <label htmlFor="email_address">Address</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="text"
+                              id="address"
+                              name="address"
+                              className="form-control"
+                              placeholder="Enter Company Address"
+                            />
+                          </div>
+                        </div>
                     </div>
-                    <label htmlFor="email_address">Address</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="address"
-                          name="address"
-                          className="form-control"
-                          placeholder="Enter Company Address"
-                        />
-                      </div>
-                    </div>
+                  </div>
+
+                  <div className="row">
+                  <div className="col-lg-4">
                     <label htmlFor="email_address">Contact No.</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="contact_no"
-                          name="contact_no"
-                          className="form-control"
-                          placeholder="Enter Contact No."
-                        />
+                      <div className="form-group">
+                        <div className="form-line">
+                          <input
+                            type="text"
+                            id="contact_no"
+                            name="contact_no"
+                            className="form-control"
+                            placeholder="Enter Contact No."
+                          />
+                        </div>
                       </div>
-                    </div>
-                    <label htmlFor="email_address">Email</label>
+                  </div>
+
+                  <div className="col-lg-4">
+                  <label htmlFor="email_address">Email</label>
                     <div className="form-group">
                       <div className="form-line">
                         <input
@@ -130,7 +148,10 @@ class CompanyComponent extends React.Component {
                         />
                       </div>
                     </div>
-                    <label htmlFor="email_address">Description</label>
+                  </div>
+
+                  <div className="col-lg-4">
+                  <label htmlFor="email_address">Description</label>
                     <div className="form-group">
                       <div className="form-line">
                         <input
@@ -142,7 +163,10 @@ class CompanyComponent extends React.Component {
                         />
                       </div>
                     </div>
-                    <br />
+                    </div>
+                </div>
+
+                    {/* <br /> */}
                     <button
                       type="submit"
                       className="btn btn-primary m-t-15 waves-effect btn-block"

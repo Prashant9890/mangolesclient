@@ -91,191 +91,253 @@ class MedicineAddComponent extends React.Component {
       <section className="content">
         <div className="container-fluid">
           <div className="block-header">
-            <h2>ADD Product</h2>
+            <h2>ADD MEDICINE</h2>
           </div>
           <div className="row clearfix">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="card">
                 <div className="header">
-                  <h2>Add Product</h2>
+                  <h2>Add Medicine</h2>
                 </div>
                 <div className="body">
                   <form onSubmit={this.formSubmit}>
-                    <label htmlFor="email_address">Product Name</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          className="form-control"
-                          placeholder="Enter Name"
-                        />
+
+                    <div className="row">
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Medicine Name</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="text"
+                              id="name"
+                              name="name"
+                              className="form-control"
+                              placeholder="Enter Name"
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <label htmlFor="email_address">Product Type</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="medical_typ"
-                          name="medical_typ"
-                          className="form-control"
-                          placeholder="Enter Medicine Type"
-                        />
+
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Product Type</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="text"
+                              id="medical_typ"
+                              name="medical_typ"
+                              className="form-control"
+                              placeholder="Enter Medicine Type"
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <label htmlFor="email_address">Buy Price</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="number"
-                          id="buy_price"
-                          name="buy_price"
-                          className="form-control"
-                          placeholder="Enter Buy Price"
-                        />
-                      </div>
-                    </div>
-                    <label htmlFor="email_address">Sell Price</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="number"
-                          id="sell_price"
-                          name="sell_price"
-                          className="form-control"
-                          placeholder="Enter Sell Price"
-                        />
-                      </div>
-                    </div>
-                    <label htmlFor="email_address">Expire Date</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="date"
-                          id="expire_date"
-                          name="expire_date"
-                          className="form-control"
-                          placeholder="Enter Expire Date"
-                        />
-                      </div>
-                    </div>
-                    <label htmlFor="email_address">Mfg Date</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="date"
-                          id="mfg_date"
-                          name="mfg_date"
-                          className="form-control"
-                          placeholder="Enter Mfg Date"
-                        />
-                      </div>
-                    </div>
-                    <label htmlFor="email_address">Description.</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="description1"
-                          name="description1"
-                          className="form-control"
-                          placeholder="Enter Description"
-                        />
+
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Buy Price</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="number"
+                              id="buy_price"
+                              name="buy_price"
+                              className="form-control"
+                              placeholder="Enter Buy Price"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
 
-                    <label htmlFor="email_address">C GST</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="number"
-                          id="c_gst"
-                          name="c_gst"
-                          className="form-control"
-                          placeholder="Enter C-GST"
-                          defaultValue='0'
-                        />
+
+                    <div className="row">
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Sell Price</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="number"
+                              id="sell_price"
+                              name="sell_price"
+                              className="form-control"
+                              placeholder="Enter Sell Price"
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <label htmlFor="email_address">S GST</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="number"
-                          id="s_gst"
-                          name="s_gst"
-                          className="form-control"
-                          placeholder="Enter S-GST"
-                          defaultValue='0'
-                        />
+
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Mfg Date</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="date"
+                              id="mfg_date"
+                              name="mfg_date"
+                              className="form-control"
+                              placeholder="Enter Mfg Date"
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <label htmlFor="email_address">Batch No.</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="number"
-                          id="batch_no"
-                          name="batch_no"
-                          className="form-control"
-                          placeholder="Enter Batch No"
-                        />
-                      </div>
-                    </div>
-                    <label htmlFor="email_address">Shelf No.</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="number"
-                          id="shelf_no"
-                          name="shelf_no"
-                          className="form-control"
-                          placeholder="Enter Shelf No"
-                          defaultValue='0'
-                        />
+
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Expire Date</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="date"
+                              id="expire_date"
+                              name="expire_date"
+                              className="form-control"
+                              placeholder="Enter Expire Date"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
 
-                    <label htmlFor="email_address">In Stock Total</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="number"
-                          id="in_stock_total"
-                          name="in_stock_total"
-                          className="form-control"
-                          placeholder="Enter In Stock"
-                        />
+                    <div className="row">
+                      <div className = "col-lg-4">
+                      <label htmlFor="email_address">Batch No.</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="number"
+                              id="batch_no"
+                              name="batch_no"
+                              className="form-control"
+                              placeholder="Enter Batch No"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className = "col-lg-4">
+                      <label htmlFor="email_address">Shelf No.</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="number"
+                              id="shelf_no"
+                              name="shelf_no"
+                              className="form-control"
+                              placeholder="Enter Shelf No"
+                              defaultValue='0'
+                            />
+                          </div>
+                        </div>
+                        </div>
+
+                        <div className = "col-lg-4">
+                        <label htmlFor="email_address">In Stock Total</label>
+                          <div className="form-group">
+                            <div className="form-line">
+                              <input
+                                type="number"
+                                id="in_stock_total"
+                                name="in_stock_total"
+                                className="form-control"
+                                placeholder="Enter In Stock"
+                              />
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+                    <div className="row">
+                      <div className = "col-lg-4">
+                      <label htmlFor="email_address">C GST</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="number"
+                              id="c_gst"
+                              name="c_gst"
+                              className="form-control"
+                              placeholder="Enter C-GST"
+                              defaultValue='0'
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className = "col-lg-4">
+                      <label htmlFor="email_address">S GST</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="number"
+                              id="s_gst"
+                              name="s_gst"
+                              className="form-control"
+                              placeholder="Enter S-GST"
+                              defaultValue='0'
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Packing</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="text"
+                              id="qty_in_strip"
+                              name="qty_in_strip"
+                              className="form-control"
+                              placeholder="Enter Packing"
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <label htmlFor="email_address">Packing</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="number"
-                          id="qty_in_strip"
-                          name="qty_in_strip"
-                          className="form-control"
-                          placeholder="Enter Packing"
-                        />
+                    <div className="row">
+                      <div className="col-lg-6">
+                      <label htmlFor="email_address">Description.</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="text"
+                              id="description1"
+                              name="description1"
+                              className="form-control"
+                              placeholder="Enter Description"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-lg-6">
+                      <label htmlFor="email_address">Company</label>
+                        <div className="form-group">
+                          <select
+                            className="form-control show-tick"
+                            name="company_id"
+                            id="company_id"
+                          >
+                            {this.state.companylist.map((item) => (
+                              <option key={item.id} value={item.id}>
+                                {item.name}
+                              </option>
+                            ))}
+                          </select>
+                        </div>
                       </div>
                     </div>
-                    <label htmlFor="email_address">Company</label>
-                    <div className="form-group">
-                      <select
-                        className="form-control show-tick"
-                        name="company_id"
-                        id="company_id"
-                      >
-                        {this.state.companylist.map((item) => (
-                          <option key={item.id} value={item.id}>
-                            {item.name}
-                          </option>
-                        ))}
-                      </select>
-                    </div>
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
                     <div className="form-group">
                       <div className="col-lg-6">
                         <button

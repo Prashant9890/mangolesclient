@@ -71,7 +71,7 @@ class HomeComponent extends React.Component {
     this.state.profitChartOption = {
       animationEnabled: true,
       title: {
-        text: "Total Profit Chart of Medicine",
+        text: "Total Profit Chart of Product",
       },
       axisX: {
         valueFormatString: "DD MMMM YYYY",
@@ -92,7 +92,7 @@ class HomeComponent extends React.Component {
     this.state.sellChartOption = {
       animationEnabled: true,
       title: {
-        text: "Total Sell Chart of Medicine",
+        text: "Total Sell Chart of Product",
       },
       axisX: {
         valueFormatString: "DD MMMM YYYY",
@@ -265,7 +265,7 @@ class HomeComponent extends React.Component {
                   <i className="material-icons">bookmark</i>
                 </div>
                 <div className="content">
-                  <div className="text">MEDICINE EXPIRE IN WEEK</div>
+                  <div className="text">PRODUCT EXPIRE IN WEEK</div>
                   <div
                     className="number count-to"
                     data-from="0"
@@ -358,9 +358,8 @@ class HomeComponent extends React.Component {
               </div>
             </div>
 
-
           </div>
-          <div className="row clearfix">
+          {/* <div className="row clearfix">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="card">
                 <div className="header">
@@ -369,13 +368,13 @@ class HomeComponent extends React.Component {
                 <div className="body">
                   <CanvasJSChart
                     options={this.state.profitChartOption}
-                    /* onRef={ref => this.chart = ref} */
                   />
                 </div>
               </div>
             </div>
-          </div>
-          <div className="row clearfix">
+          </div> */}
+          
+          {/* <div className="row clearfix">
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="card">
                 <div className="header">
@@ -384,12 +383,11 @@ class HomeComponent extends React.Component {
                 <div className="body">
                   <CanvasJSChart
                     options={this.state.sellChartOption}
-                    /* onRef={ref => this.chart = ref} */
                   />
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     );

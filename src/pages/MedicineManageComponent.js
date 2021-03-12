@@ -151,7 +151,7 @@ class MedicineManageComponent extends React.Component {
       <section className="content">
         <div className="container-fluid">
           <div className="block-header">
-            <h2>Manage Medicine</h2>
+            <h2>Manage Product</h2>
           </div>
 
           <div className="row clearfix">
@@ -174,7 +174,7 @@ class MedicineManageComponent extends React.Component {
                   ) : (
                     ""
                   )}
-                  <h2>All Medicine</h2>
+                  <h2>All Product</h2>
                 </div>
                 <div className="body table-responsive">
                   <table className="table table-hover">
@@ -182,7 +182,7 @@ class MedicineManageComponent extends React.Component {
                       <tr>
                         <th>#ID</th>
                         <th>NAME</th>
-                        <th>Medical Type</th>
+                        <th>Product Type</th>
                         <th>Buy Price</th>
                         <th>Sell Price</th>
                         <th>Batch No</th>
@@ -232,7 +232,7 @@ class MedicineManageComponent extends React.Component {
             <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <div className="card">
                 <div className="header">
-                  <h2>Manage Medicine</h2>
+                  <h2>Manage Product</h2>
                 </div>
                 <div className="body">
                   <form onSubmit={this.formSubmit}>
@@ -249,7 +249,7 @@ class MedicineManageComponent extends React.Component {
                         />
                       </div>
                     </div>
-                    <label htmlFor="email_address">Medicine Type</label>
+                    <label htmlFor="email_address">Product Type</label>
                     <div className="form-group">
                       <div className="form-line">
                         <input

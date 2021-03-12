@@ -112,84 +112,110 @@ class CompanyDetailsComponent extends React.Component {
                 </div>
                 <div className="body">
                   <form onSubmit={this.formSubmit}>
-                    <label htmlFor="email_address">Name</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="name"
-                          name="name"
-                          className="form-control"
-                          placeholder="Enter Company Name"
-                          defaultValue={this.state.name}
-                        />
+
+                    <div className="row">
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Name</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="text"
+                              id="name"
+                              name="name"
+                              className="form-control"
+                              placeholder="Enter Company Name"
+                              defaultValue={this.state.name}
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">License No.</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="text"
+                              id="license_no"
+                              name="license_no"
+                              className="form-control"
+                              placeholder="Enter License No."
+                              defaultValue={this.state.license_no}
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                        <div className="col-lg-4">
+                        <label htmlFor="email_address">Address</label>
+                          <div className="form-group">
+                            <div className="form-line">
+                              <input
+                                type="text"
+                                id="address"
+                                name="address"
+                                className="form-control"
+                                placeholder="Enter Company Address"
+                                defaultValue={this.state.address}
+                              />
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
+
+                    <div className="row">
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Contact No.</label>
+                          <div className="form-group">
+                            <div className="form-line">
+                              <input
+                                type="text"
+                                id="contact_no"
+                                name="contact_no"
+                                className="form-control"
+                                placeholder="Enter Contact No."
+                                defaultValue={this.state.contact_no}
+                              />
+                            </div>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Email</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="text"
+                              id="email"
+                              name="email"
+                              className="form-control"
+                              placeholder="Enter Company Email"
+                              defaultValue={this.state.email}
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-lg-4">
+                      <label htmlFor="email_address">Description</label>
+                        <div className="form-group">
+                          <div className="form-line">
+                            <input
+                              type="text"
+                              id="description"
+                              name="description"
+                              className="form-control"
+                              placeholder="Enter Description"
+                              defaultValue={this.state.description}
+                            />
+                          </div>
+                        </div>
                       </div>
                     </div>
-                    <label htmlFor="email_address">License No.</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="license_no"
-                          name="license_no"
-                          className="form-control"
-                          placeholder="Enter License No."
-                          defaultValue={this.state.license_no}
-                        />
-                      </div>
-                    </div>
-                    <label htmlFor="email_address">Address</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="address"
-                          name="address"
-                          className="form-control"
-                          placeholder="Enter Company Address"
-                          defaultValue={this.state.address}
-                        />
-                      </div>
-                    </div>
-                    <label htmlFor="email_address">Contact No.</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="contact_no"
-                          name="contact_no"
-                          className="form-control"
-                          placeholder="Enter Contact No."
-                          defaultValue={this.state.contact_no}
-                        />
-                      </div>
-                    </div>
-                    <label htmlFor="email_address">Email</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="email"
-                          name="email"
-                          className="form-control"
-                          placeholder="Enter Company Email"
-                          defaultValue={this.state.email}
-                        />
-                      </div>
-                    </div>
-                    <label htmlFor="email_address">Description</label>
-                    <div className="form-group">
-                      <div className="form-line">
-                        <input
-                          type="text"
-                          id="description"
-                          name="description"
-                          className="form-control"
-                          placeholder="Enter Description"
-                          defaultValue={this.state.description}
-                        />
-                      </div>
-                    </div>
+
+                    
+                    
                     <br />
                     <button
                       type="submit"
